@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <h1>Today</h1>
+      </div>
+      <form action="" id="todo-form">
+        <input
+          type="text"
+          name="task-name"
+          placeholder="buy potatoes"
+          class="main-input"
+        />
+        <button type="submit">Add task</button>
+      </form>
+    </header>
+    <section>
+      <div class="container" id="main-content">
+        <ul class="stats">
+          <li>
+            <span>Remaining</span>
+            <span id="remaining-tasks">0</span>
+          </li>
+          <li>
+            <span>Completed</span>
+            <span id="completed-tasks">0</span>
+          </li>
+          <li>
+            <span>Total</span>
+            <span id="total-tasks">0</span>
+          </li>
+        </ul>
+        <ul class="todos"></ul>
+      </div>
+    </section>
+  </body>
+</html>
